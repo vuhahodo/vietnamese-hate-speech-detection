@@ -1,0 +1,267 @@
+[{"stream_name":"stderr","time":5.892201269,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":5.892827718,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":5.892833804,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":5.892837403,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.442629483,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.44265862,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.442663949,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.442668159,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":7.670150368,"data":"GPU compute capability: 6.0\n"}
+,{"stream_name":"stdout","time":7.670206147,"data":"Compute capability 6.0 is older than sm_70 â€” the preinstalled torch build here only ships sm_70+ kernels. Installing torch==2.4.1 (sm_60 support + register_fake)...\n"}
+,{"stream_name":"stdout","time":17.73748818,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.9/798.9 MB 2.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":17.939307017,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.9/798.9 MB 2.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.565547983,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 174.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.683366725,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 246.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.767848652,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 174.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.767876707,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 246.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.788435204,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 234.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":22.9901902,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 234.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":29.555377635,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 2.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":29.757952253,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 2.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":33.768593309,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 90.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":33.970767089,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 90.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":36.164831424,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 157.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":36.36689688,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 157.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":36.806546439,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 207.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":37.008527425,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 207.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":37.551139228,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 132.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":37.757131586,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 132.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":40.179470876,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 127.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":40.379826854,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 127.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":41.781320352,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 134.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":41.98314233,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 134.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":42.33377158,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 116.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":42.535939354,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 116.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":47.324450561,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.5/209.5 MB 2.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":47.52569352,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.5/209.5 MB 2.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":48.158723816,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.7/39.7 MB 213.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":48.360788723,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.7/39.7 MB 213.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.091689093,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 748.1 kB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.196680301,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.9/98.9 kB 1.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.293693823,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 748.1 kB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.293710873,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.9/98.9 kB 1.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.30126745,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 3.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.321627507,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 10.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.49419302,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 16.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.503587712,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 3.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.503604656,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 10.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.503610789,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 16.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.524758838,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 62.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.692536177,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 52.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.726687245,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 62.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.726734246,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 52.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.77285436,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 35.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.974846678,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 35.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":172.089828599,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":172.08986891,"data":"bigframes 2.39.0 requires google-cloud-bigquery-storage\u003c3.0.0,\u003e=2.30.0, which is not installed.\n"}
+,{"stream_name":"stderr","time":172.08987591,"data":"google-adk 1.29.0 requires google-cloud-bigquery-storage\u003e=2.0.0, which is not installed.\n"}
+,{"stream_name":"stderr","time":172.089881213,"data":"datasets 5.0.0 requires fsspec[http]\u003c=2026.4.0,\u003e=2023.1.0, but you have fsspec 2026.7.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.089897188,"data":"google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.089901621,"data":"google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.08990585,"data":"dopamine-rl 4.1.2 requires gym\u003c=0.25.2, but you have gym 0.26.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.089909551,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.089913076,"data":"torchvision 0.25.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.089978879,"data":"gcsfs 2025.3.0 requires fsspec==2025.3.0, but you have fsspec 2026.7.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296490857,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":172.296517273,"data":"bigframes 2.39.0 requires google-cloud-bigquery-storage\u003c3.0.0,\u003e=2.30.0, which is not installed.\n"}
+,{"stream_name":"stderr","time":172.296523123,"data":"google-adk 1.29.0 requires google-cloud-bigquery-storage\u003e=2.0.0, which is not installed.\n"}
+,{"stream_name":"stderr","time":172.296527203,"data":"datasets 5.0.0 requires fsspec[http]\u003c=2026.4.0,\u003e=2023.1.0, but you have fsspec 2026.7.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296531335,"data":"google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296535393,"data":"google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296539276,"data":"dopamine-rl 4.1.2 requires gym\u003c=0.25.2, but you have gym 0.26.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296543481,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296547527,"data":"torchvision 0.25.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296551621,"data":"gcsfs 2025.3.0 requires fsspec==2025.3.0, but you have fsspec 2026.7.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296555616,"data":"\n"}
+,{"stream_name":"stderr","time":172.296559121,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":172.296563535,"data":"bigframes 2.39.0 requires google-cloud-bigquery-storage\u003c3.0.0,\u003e=2.30.0, which is not installed.\n"}
+,{"stream_name":"stderr","time":172.296567403,"data":"google-adk 1.29.0 requires google-cloud-bigquery-storage\u003e=2.0.0, which is not installed.\n"}
+,{"stream_name":"stderr","time":172.296571379,"data":"datasets 5.0.0 requires fsspec[http]\u003c=2026.4.0,\u003e=2023.1.0, but you have fsspec 2026.7.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296575622,"data":"google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296580071,"data":"google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296584125,"data":"dopamine-rl 4.1.2 requires gym\u003c=0.25.2, but you have gym 0.26.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296597767,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296601993,"data":"torchvision 0.25.0+cu128 requires torch==2.10.0, but you have torch 2.4.1+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":172.296607453,"data":"gcsfs 2025.3.0 requires fsspec==2025.3.0, but you have fsspec 2026.7.0 which is incompatible.\n"}
+,{"stream_name":"stdout","time":172.723797263,"data":"Reinstalled torch==2.4.1 for older-GPU compatibility.\n"}
+,{"stream_name":"stdout","time":175.441257739,"data":"torch 2.4.1+cu121 | CUDA available: True\n"}
+,{"stream_name":"stdout","time":175.441306812,"data":"Tesla P100-PCIE-16GB\n"}
+,{"stream_name":"stdout","time":175.441311457,"data":"CUDA smoke-test: 1.0\n"}
+,{"stream_name":"stdout","time":175.495502439,"data":"/kaggle/input contents: ['datasets']\n"}
+,{"stream_name":"stdout","time":175.495527844,"data":"train.csv candidates found: ['/kaggle/input/datasets/leduc13/vihsd-data/train.csv']\n"}
+,{"stream_name":"stdout","time":175.495532039,"data":"Using DATA_DIR = /kaggle/input/datasets/leduc13/vihsd-data\n"}
+,{"stream_name":"stdout","time":175.630778274,"data":"train (24048, 2) {0: np.int64(19886), 1: np.int64(1606), 2: np.int64(2556)}\n"}
+,{"stream_name":"stdout","time":175.630802491,"data":"dev (2672, 2) {0: np.int64(2190), 1: np.int64(212), 2: np.int64(270)}\n"}
+,{"stream_name":"stdout","time":175.630807921,"data":"test (6680, 2) {0: np.int64(5548), 1: np.int64(444), 2: np.int64(688)}\n"}
+,{"stream_name":"stdout","time":186.716440897,"data":"Baseline macro-F1: 0.6287\n"}
+,{"stream_name":"stdout","time":186.716486312,"data":"              precision    recall  f1-score   support\n"}
+,{"stream_name":"stdout","time":186.716492122,"data":"\n"}
+,{"stream_name":"stdout","time":186.71649668,"data":"       CLEAN      0.945     0.882     0.912      5548\n"}
+,{"stream_name":"stdout","time":186.716501387,"data":"   OFFENSIVE      0.375     0.482     0.422       444\n"}
+,{"stream_name":"stdout","time":186.716506117,"data":"        HATE      0.479     0.651     0.552       688\n"}
+,{"stream_name":"stdout","time":186.71651085,"data":"\n"}
+,{"stream_name":"stdout","time":186.71651529,"data":"    accuracy                          0.831      6680\n"}
+,{"stream_name":"stdout","time":186.7165199,"data":"   macro avg      0.600     0.672     0.629      6680\n"}
+,{"stream_name":"stdout","time":186.716524645,"data":"weighted avg      0.859     0.831     0.843      6680\n"}
+,{"stream_name":"stdout","time":186.716529295,"data":"\n"}
+,{"stream_name":"stdout","time":189.715409513,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/8.5 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/8.5 MB\u001b[0m \u001b[31m2.4 MB/s\u001b[0m eta \u001b[36m0:00:04\u001b[0m\r\u001b[2K   \u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.1/8.5 MB\u001b[0m \u001b[31m1.8 MB/s\u001b[0m eta \u001b[36m0:00:05\u001b[0m\r\u001b[2K   \u001b[91m━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.2/8.5 MB\u001b[0m \u001b[31m2.2 MB/s\u001b[0m eta \u001b[36m0:00:04\u001b[0m\r\u001b[2K   \u001b[91m━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.4/8.5 MB\u001b[0m \u001b[31m2.9 MB/s\u001b[0m eta \u001b[36m0:00:03\u001b[0m\r\u001b[2K   \u001b[91m━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.7/8.5 MB\u001b[0m \u001b[31m4.2 MB/s\u001b[0m eta \u001b[36m0:00:02\u001b[0m\r\u001b[2K   \u001b[91m━━━━━\u001b[0m\u001b[91m╸\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.3/8.5 MB\u001b[0m \u001b[31m6.5 MB/s\u001b[0m eta \u001b[36m0:00:02\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2.6/8.5 MB\u001b[0m \u001b[31m10.9 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m4.5/8.5 MB\u001b[0m \u001b[31m16.5 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━\u001b[0m \u001b[32m7.4/8.5 MB\u001b[0m \u001b[31m24.1 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m8.4/8.5 MB\u001b[0m \u001b[31m26.8 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m8.5/8.5 MB\u001b[0m \u001b[31m23.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":189.869149412,"data":"\u001b[?25h\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/1.2 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.2/1.2 MB\u001b[0m \u001b[31m68.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":197.818898548,"data":"\u001b[?25hEm được làm fan cứng luôn rồi nè ❤️ reaction quá hay quá cute coi mấy giờ này quá hợp lí =]]]\n"}
+,{"stream_name":"stdout","time":197.818980348,"data":"Em được làm fan cứng luôn rồi nè ❤ ️ reaction quá hay quá cute coi mấy giờ này quá hợp_lí = ] ] ]\n"}
+,{"stream_name":"stderr","time":204.485873409,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":204.485905468,"data":"\n"}
+,{"stream_name":"stderr","time":204.485910954,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":214.848016079,"data":"class weights: tensor([0.4031, 4.9913, 3.1362], device='cuda:0')\n"}
+,{"stream_name":"stderr","time":216.746089376,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":216.746117402,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":216.746123936,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":216.746219383,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":216.746236313,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":216.746461,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":216.747039431,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":216.747048205,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":216.747052573,"data":"Exception encountered at \"In [10]\":\n"}
+,{"stream_name":"stderr","time":216.747056612,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":216.747060053,"data":"RuntimeError                              Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":216.7470635,"data":"/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in __getattr__(self, name)\n"}
+,{"stream_name":"stderr","time":216.747084435,"data":"   2097             try:\n"}
+,{"stream_name":"stderr","time":216.747088108,"data":"-\u003e 2098                 module = self._get_module(self._class_to_module[name])\n"}
+,{"stream_name":"stderr","time":216.747092069,"data":"   2099                 value = getattr(module, name)\n"}
+,{"stream_name":"stderr","time":216.747095704,"data":"\n"}
+,{"stream_name":"stderr","time":216.747101003,"data":"/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in _get_module(self, module_name)\n"}
+,{"stream_name":"stderr","time":216.747109222,"data":"   2287         except Exception as e:\n"}
+,{"stream_name":"stderr","time":216.747111665,"data":"-\u003e 2288             raise e\n"}
+,{"stream_name":"stderr","time":216.747114173,"data":"   2289 \n"}
+,{"stream_name":"stderr","time":216.747116502,"data":"\n"}
+,{"stream_name":"stderr","time":216.747118834,"data":"/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in _get_module(self, module_name)\n"}
+,{"stream_name":"stderr","time":216.747121524,"data":"   2285         try:\n"}
+,{"stream_name":"stderr","time":216.747123929,"data":"-\u003e 2286             return importlib.import_module(\".\" + module_name, self.__name__)\n"}
+,{"stream_name":"stderr","time":216.747126744,"data":"   2287         except Exception as e:\n"}
+,{"stream_name":"stderr","time":216.74712914,"data":"\n"}
+,{"stream_name":"stderr","time":216.747131485,"data":"/usr/lib/python3.12/importlib/__init__.py in import_module(name, package)\n"}
+,{"stream_name":"stderr","time":216.747133928,"data":"     89             level += 1\n"}
+,{"stream_name":"stderr","time":216.747136328,"data":"---\u003e 90     return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":216.747141611,"data":"     91 \n"}
+,{"stream_name":"stderr","time":216.747143976,"data":"\n"}
+,{"stream_name":"stderr","time":216.747146324,"data":"/usr/lib/python3.12/importlib/_bootstrap.py in _gcd_import(name, package, level)\n"}
+,{"stream_name":"stderr","time":216.74714949,"data":"\n"}
+,{"stream_name":"stderr","time":216.747151836,"data":"/usr/lib/python3.12/importlib/_bootstrap.py in _find_and_load(name, import_)\n"}
+,{"stream_name":"stderr","time":216.74715444,"data":"\n"}
+,{"stream_name":"stderr","time":216.747157275,"data":"/usr/lib/python3.12/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)\n"}
+,{"stream_name":"stderr","time":216.747161173,"data":"\n"}
+,{"stream_name":"stderr","time":216.747164863,"data":"/usr/lib/python3.12/importlib/_bootstrap.py in _load_unlocked(spec)\n"}
+,{"stream_name":"stderr","time":216.747188774,"data":"\n"}
+,{"stream_name":"stderr","time":216.747191256,"data":"/usr/lib/python3.12/importlib/_bootstrap_external.py in exec_module(self, module)\n"}
+,{"stream_name":"stderr","time":216.747193697,"data":"\n"}
+,{"stream_name":"stderr","time":216.747195827,"data":"/usr/lib/python3.12/importlib/_bootstrap.py in _call_with_frames_removed(f, *args, **kwds)\n"}
+,{"stream_name":"stderr","time":216.747198185,"data":"\n"}
+,{"stream_name":"stderr","time":216.747200335,"data":"/usr/local/lib/python3.12/dist-packages/transformers/models/roberta/modeling_roberta.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":216.747202884,"data":"     32 from ...masking_utils import create_bidirectional_mask, create_causal_mask\n"}
+,{"stream_name":"stderr","time":216.747205265,"data":"---\u003e 33 from ...modeling_layers import GradientCheckpointingLayer\n"}
+,{"stream_name":"stderr","time":216.747207598,"data":"     34 from ...modeling_outputs import (\n"}
+,{"stream_name":"stderr","time":216.74720991,"data":"\n"}
+,{"stream_name":"stderr","time":216.747212813,"data":"/usr/local/lib/python3.12/dist-packages/transformers/modeling_layers.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":216.747215465,"data":"     26 from .models.auto import AutoModel\n"}
+,{"stream_name":"stderr","time":216.747217771,"data":"---\u003e 27 from .processing_utils import Unpack\n"}
+,{"stream_name":"stderr","time":216.747220027,"data":"     28 from .utils import TransformersKwargs, auto_docstring, can_return_tuple, logging\n"}
+,{"stream_name":"stderr","time":216.747222447,"data":"\n"}
+,{"stream_name":"stderr","time":216.74722467,"data":"/usr/local/lib/python3.12/dist-packages/transformers/processing_utils.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":216.74722743,"data":"     37 from .feature_extraction_utils import BatchFeature\n"}
+,{"stream_name":"stderr","time":216.747229785,"data":"---\u003e 38 from .image_utils import ChannelDimension, ImageInput, is_vision_available\n"}
+,{"stream_name":"stderr","time":216.747232141,"data":"     39 from .tokenization_utils_base import (\n"}
+,{"stream_name":"stderr","time":216.747234362,"data":"\n"}
+,{"stream_name":"stderr","time":216.747236471,"data":"/usr/local/lib/python3.12/dist-packages/transformers/image_utils.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":216.747238806,"data":"     52     if is_torchvision_available():\n"}
+,{"stream_name":"stderr","time":216.747241025,"data":"---\u003e 53         from torchvision.transforms import InterpolationMode\n"}
+,{"stream_name":"stderr","time":216.74724344,"data":"     54 \n"}
+,{"stream_name":"stderr","time":216.747245773,"data":"\n"}
+,{"stream_name":"stderr","time":216.747247909,"data":"/usr/local/lib/python3.12/dist-packages/torchvision/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":216.747250237,"data":"      9 from .extension import _HAS_OPS  # usort:skip\n"}
+,{"stream_name":"stderr","time":216.747252479,"data":"---\u003e 10 from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip\n"}
+,{"stream_name":"stderr","time":216.747254886,"data":"     11 \n"}
+,{"stream_name":"stderr","time":216.747257032,"data":"\n"}
+,{"stream_name":"stderr","time":216.747259207,"data":"/usr/local/lib/python3.12/dist-packages/torchvision/_meta_registrations.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":216.747261586,"data":"    162 \n"}
+,{"stream_name":"stderr","time":216.747263736,"data":"--\u003e 163 @torch.library.register_fake(\"torchvision::nms\")\n"}
+,{"stream_name":"stderr","time":216.747268705,"data":"    164 def meta_nms(dets, scores, iou_threshold):\n"}
+,{"stream_name":"stderr","time":216.747271872,"data":"\n"}
+,{"stream_name":"stderr","time":216.747304098,"data":"/usr/local/lib/python3.12/dist-packages/torch/library.py in register(func)\n"}
+,{"stream_name":"stderr","time":216.747308097,"data":"    653             use_lib = lib\n"}
+,{"stream_name":"stderr","time":216.747311452,"data":"--\u003e 654         use_lib._register_fake(op_name, func, _stacklevel=stacklevel + 1)\n"}
+,{"stream_name":"stderr","time":216.747316026,"data":"    655         return func\n"}
+,{"stream_name":"stderr","time":216.747319547,"data":"\n"}
+,{"stream_name":"stderr","time":216.747322759,"data":"/usr/local/lib/python3.12/dist-packages/torch/library.py in _register_fake(self, op_name, fn, _stacklevel)\n"}
+,{"stream_name":"stderr","time":216.747326394,"data":"    153 \n"}
+,{"stream_name":"stderr","time":216.747335891,"data":"--\u003e 154         handle = entry.abstract_impl.register(func_to_register, source)\n"}
+,{"stream_name":"stderr","time":216.747338602,"data":"    155         self._registration_handles.append(handle)\n"}
+,{"stream_name":"stderr","time":216.747340867,"data":"\n"}
+,{"stream_name":"stderr","time":216.747343072,"data":"/usr/local/lib/python3.12/dist-packages/torch/_library/abstract_impl.py in register(self, func, source)\n"}
+,{"stream_name":"stderr","time":216.747345412,"data":"     30             )\n"}
+,{"stream_name":"stderr","time":216.747347625,"data":"---\u003e 31         if torch._C._dispatch_has_kernel_for_dispatch_key(self.qualname, \"Meta\"):\n"}
+,{"stream_name":"stderr","time":216.747350185,"data":"     32             raise RuntimeError(\n"}
+,{"stream_name":"stderr","time":216.747352417,"data":"\n"}
+,{"stream_name":"stderr","time":216.747354527,"data":"RuntimeError: operator torchvision::nms does not exist\n"}
+,{"stream_name":"stderr","time":216.747356772,"data":"\n"}
+,{"stream_name":"stderr","time":216.747358937,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":216.747361199,"data":"\n"}
+,{"stream_name":"stderr","time":216.747363632,"data":"ModuleNotFoundError                       Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":216.747365982,"data":"/tmp/ipykernel_23/3313648753.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":216.74736841,"data":"      6 print('class weights:', class_weights)\n"}
+,{"stream_name":"stderr","time":216.747370815,"data":"      7 \n"}
+,{"stream_name":"stderr","time":216.747373046,"data":"----\u003e 8 model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, num_labels=3).to(DEVICE)\n"}
+,{"stream_name":"stderr","time":216.747375521,"data":"\n"}
+,{"stream_name":"stderr","time":216.74737767,"data":"/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in from_pretrained(cls, pretrained_model_name_or_path, *model_args, **kwargs)\n"}
+,{"stream_name":"stderr","time":216.747380189,"data":"    367             )\n"}
+,{"stream_name":"stderr","time":216.747382443,"data":"    368         elif type(config) in cls._model_mapping:\n"}
+,{"stream_name":"stderr","time":216.747384813,"data":"--\u003e 369             model_class = _get_model_class(config, cls._model_mapping)\n"}
+,{"stream_name":"stderr","time":216.747387133,"data":"    370             if model_class.config_class == config.sub_configs.get(\"text_config\", None):\n"}
+,{"stream_name":"stderr","time":216.747389558,"data":"    371                 config = config.get_text_config()\n"}
+,{"stream_name":"stderr","time":216.747391833,"data":"\n"}
+,{"stream_name":"stderr","time":216.74739722,"data":"/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in _get_model_class(config, model_mapping)\n"}
+,{"stream_name":"stderr","time":216.747399736,"data":"    176 \n"}
+,{"stream_name":"stderr","time":216.74740184,"data":"    177 def _get_model_class(config, model_mapping):\n"}
+,{"stream_name":"stderr","time":216.747404082,"data":"--\u003e 178     supported_models = model_mapping[type(config)]\n"}
+,{"stream_name":"stderr","time":216.747406412,"data":"    179     if not isinstance(supported_models, (list, tuple)):\n"}
+,{"stream_name":"stderr","time":216.747408668,"data":"    180         return supported_models\n"}
+,{"stream_name":"stderr","time":216.74741087,"data":"\n"}
+,{"stream_name":"stderr","time":216.74741299,"data":"/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in __getitem__(self, key)\n"}
+,{"stream_name":"stderr","time":216.747415302,"data":"    568         if model_type in self._model_mapping:\n"}
+,{"stream_name":"stderr","time":216.747417558,"data":"    569             model_name = self._model_mapping[model_type]\n"}
+,{"stream_name":"stderr","time":216.747419818,"data":"--\u003e 570             return self._load_attr_from_module(model_type, model_name)\n"}
+,{"stream_name":"stderr","time":216.74742212,"data":"    571 \n"}
+,{"stream_name":"stderr","time":216.747424265,"data":"    572         # Maybe there was several model types associated with this config.\n"}
+,{"stream_name":"stderr","time":216.747426568,"data":"\n"}
+,{"stream_name":"stderr","time":216.747428704,"data":"/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in _load_attr_from_module(self, model_type, attr)\n"}
+,{"stream_name":"stderr","time":216.747431081,"data":"    582         if module_name not in self._modules:\n"}
+,{"stream_name":"stderr","time":216.74743331,"data":"    583             self._modules[module_name] = importlib.import_module(f\".{module_name}\", \"transformers.models\")\n"}
+,{"stream_name":"stderr","time":216.747435792,"data":"--\u003e 584         return getattribute_from_module(self._modules[module_name], attr)\n"}
+,{"stream_name":"stderr","time":216.74743811,"data":"    585 \n"}
+,{"stream_name":"stderr","time":216.747440234,"data":"    586     def keys(self) -\u003e list[type[PreTrainedConfig]]:\n"}
+,{"stream_name":"stderr","time":216.747442583,"data":"\n"}
+,{"stream_name":"stderr","time":216.747444749,"data":"/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in getattribute_from_module(module, attr)\n"}
+,{"stream_name":"stderr","time":216.747448412,"data":"    494     if isinstance(attr, tuple):\n"}
+,{"stream_name":"stderr","time":216.747450608,"data":"    495         return tuple(getattribute_from_module(module, a) for a in attr)\n"}
+,{"stream_name":"stderr","time":216.7474529,"data":"--\u003e 496     if hasattr(module, attr):\n"}
+,{"stream_name":"stderr","time":216.747455246,"data":"    497         return getattr(module, attr)\n"}
+,{"stream_name":"stderr","time":216.747457501,"data":"    498     # Some of the mappings have entries model_type -\u003e object of another model type. In that case we try to grab the\n"}
+,{"stream_name":"stderr","time":216.747459908,"data":"\n"}
+,{"stream_name":"stderr","time":216.747462114,"data":"/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in __getattr__(self, name)\n"}
+,{"stream_name":"stderr","time":216.747464427,"data":"   2180                             ) from e\n"}
+,{"stream_name":"stderr","time":216.747466734,"data":"   2181                 else:\n"}
+,{"stream_name":"stderr","time":216.747468933,"data":"-\u003e 2182                     raise ModuleNotFoundError(\n"}
+,{"stream_name":"stderr","time":216.747473259,"data":"   2183                         f\"Could not import module '{name}'. Are this object's requirements defined correctly?\"\n"}
+,{"stream_name":"stderr","time":216.747475928,"data":"   2184                     ) from e\n"}
+,{"stream_name":"stderr","time":216.747478123,"data":"\n"}
+,{"stream_name":"stderr","time":216.747480313,"data":"ModuleNotFoundError: Could not import module 'RobertaForSequenceClassification'. Are this object's requirements defined correctly?\n"}
+,{"stream_name":"stderr","time":216.747482727,"data":"\n"}
+,{"stream_name":"stderr","time":218.720605762,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":218.720648791,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":218.856447876,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":218.856472399,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":221.59445283,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":221.914470503,"data":"[NbConvertApp] Writing 137991 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":224.271482807,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":225.126674618,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":225.126702467,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":225.12693814,"data":"[NbConvertApp] Writing 436533 bytes to __results__.html\n"}
+]

@@ -1,0 +1,247 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+GPU compute capability: 6.0
+Compute capability 6.0 is older than sm_70 â€” the preinstalled torch build here only ships sm_70+ kernels. Downgrading to torch==2.3.1 (last series with sm_60 support)...
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 780.9/780.9 MB 2.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 780.9/780.9 MB 2.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 155.6 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 195.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 155.6 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 195.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 189.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 189.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.7/731.7 MB 60.7 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 731.7/731.7 MB 60.7 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 71.9 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 71.9 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 134.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 134.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 169.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 169.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 153.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 153.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 115.0 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 115.0 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 127.7 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 127.7 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 119.5 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 119.5 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.7/39.7 MB 192.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.7/39.7 MB 192.4 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 2.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.9/98.9 kB 5.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 10.7 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 8.6 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 61.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 119.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 2.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.9/98.9 kB 5.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 10.7 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 8.6 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 61.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 119.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 32.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 32.8 MB/s eta 0:00:00
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+bigframes 2.39.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+google-adk 1.29.0 requires google-cloud-bigquery-storage>=2.0.0, which is not installed.
+datasets 5.0.0 requires fsspec[http]<=2026.4.0,>=2023.1.0, but you have fsspec 2026.7.0 which is incompatible.
+google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.3.1+cu121 which is incompatible.
+torchvision 0.25.0+cu128 requires torch==2.10.0, but you have torch 2.3.1+cu121 which is incompatible.
+gcsfs 2025.3.0 requires fsspec==2025.3.0, but you have fsspec 2026.7.0 which is incompatible.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+bigframes 2.39.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+google-adk 1.29.0 requires google-cloud-bigquery-storage>=2.0.0, which is not installed.
+datasets 5.0.0 requires fsspec[http]<=2026.4.0,>=2023.1.0, but you have fsspec 2026.7.0 which is incompatible.
+google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.3.1+cu121 which is incompatible.
+torchvision 0.25.0+cu128 requires torch==2.10.0, but you have torch 2.3.1+cu121 which is incompatible.
+gcsfs 2025.3.0 requires fsspec==2025.3.0, but you have fsspec 2026.7.0 which is incompatible.
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+bigframes 2.39.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+google-adk 1.29.0 requires google-cloud-bigquery-storage>=2.0.0, which is not installed.
+datasets 5.0.0 requires fsspec[http]<=2026.4.0,>=2023.1.0, but you have fsspec 2026.7.0 which is incompatible.
+google-colab 1.0.0 requires jupyter-server==2.14.0, but you have jupyter-server 2.12.5 which is incompatible.
+google-colab 1.0.0 requires pandas==2.2.2, but you have pandas 2.3.3 which is incompatible.
+dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.3.1+cu121 which is incompatible.
+torchvision 0.25.0+cu128 requires torch==2.10.0, but you have torch 2.3.1+cu121 which is incompatible.
+gcsfs 2025.3.0 requires fsspec==2025.3.0, but you have fsspec 2026.7.0 which is incompatible.
+Reinstalled torch==2.3.1 for older-GPU compatibility.
+torch 2.3.1+cu121 | CUDA available: True
+Tesla P100-PCIE-16GB
+CUDA smoke-test: 1.0
+/kaggle/input contents: ['datasets']
+train.csv candidates found: ['/kaggle/input/datasets/leduc13/vihsd-data/train.csv']
+Using DATA_DIR = /kaggle/input/datasets/leduc13/vihsd-data
+train (24048, 2) {0: np.int64(19886), 1: np.int64(1606), 2: np.int64(2556)}
+dev (2672, 2) {0: np.int64(2190), 1: np.int64(212), 2: np.int64(270)}
+test (6680, 2) {0: np.int64(5548), 1: np.int64(444), 2: np.int64(688)}
+Baseline macro-F1: 0.6287
+              precision    recall  f1-score   support
+
+       CLEAN      0.945     0.882     0.912      5548
+   OFFENSIVE      0.375     0.482     0.422       444
+        HATE      0.479     0.651     0.552       688
+
+    accuracy                          0.831      6680
+   macro avg      0.600     0.672     0.629      6680
+weighted avg      0.859     0.831     0.843      6680
+
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/8.5 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.1/8.5 MB[0m [31m34.3 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━[0m [32m7.7/8.5 MB[0m [31m112.6 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m8.4/8.5 MB[0m [31m116.0 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m8.5/8.5 MB[0m [31m75.1 MB/s[0m eta [36m0:00:00[0m
+[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m57.1 MB/s[0m eta [36m0:00:00[0m
+[?25hEm được làm fan cứng luôn rồi nè ❤️ reaction quá hay quá cute coi mấy giờ này quá hợp lí =]]]
+Em được làm fan cứng luôn rồi nè ❤ ️ reaction quá hay quá cute coi mấy giờ này quá hợp_lí = ] ] ]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+class weights: tensor([0.4031, 4.9913, 3.1362], device='cuda:0')
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in __getattr__(self, name)
+   2097             try:
+-> 2098                 module = self._get_module(self._class_to_module[name])
+   2099                 value = getattr(module, name)
+
+/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in _get_module(self, module_name)
+   2287         except Exception as e:
+-> 2288             raise e
+   2289 
+
+/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in _get_module(self, module_name)
+   2285         try:
+-> 2286             return importlib.import_module("." + module_name, self.__name__)
+   2287         except Exception as e:
+
+/usr/lib/python3.12/importlib/__init__.py in import_module(name, package)
+     89             level += 1
+---> 90     return _bootstrap._gcd_import(name[level:], package, level)
+     91 
+
+/usr/lib/python3.12/importlib/_bootstrap.py in _gcd_import(name, package, level)
+
+/usr/lib/python3.12/importlib/_bootstrap.py in _find_and_load(name, import_)
+
+/usr/lib/python3.12/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+
+/usr/lib/python3.12/importlib/_bootstrap.py in _load_unlocked(spec)
+
+/usr/lib/python3.12/importlib/_bootstrap_external.py in exec_module(self, module)
+
+/usr/lib/python3.12/importlib/_bootstrap.py in _call_with_frames_removed(f, *args, **kwds)
+
+/usr/local/lib/python3.12/dist-packages/transformers/models/roberta/modeling_roberta.py in <module>
+     32 from ...masking_utils import create_bidirectional_mask, create_causal_mask
+---> 33 from ...modeling_layers import GradientCheckpointingLayer
+     34 from ...modeling_outputs import (
+
+/usr/local/lib/python3.12/dist-packages/transformers/modeling_layers.py in <module>
+     26 from .models.auto import AutoModel
+---> 27 from .processing_utils import Unpack
+     28 from .utils import TransformersKwargs, auto_docstring, can_return_tuple, logging
+
+/usr/local/lib/python3.12/dist-packages/transformers/processing_utils.py in <module>
+     37 from .feature_extraction_utils import BatchFeature
+---> 38 from .image_utils import ChannelDimension, ImageInput, is_vision_available
+     39 from .tokenization_utils_base import (
+
+/usr/local/lib/python3.12/dist-packages/transformers/image_utils.py in <module>
+     52     if is_torchvision_available():
+---> 53         from torchvision.transforms import InterpolationMode
+     54 
+
+/usr/local/lib/python3.12/dist-packages/torchvision/__init__.py in <module>
+      9 from .extension import _HAS_OPS  # usort:skip
+---> 10 from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip
+     11 
+
+/usr/local/lib/python3.12/dist-packages/torchvision/_meta_registrations.py in <module>
+    162 
+--> 163 @torch.library.register_fake("torchvision::nms")
+    164 def meta_nms(dets, scores, iou_threshold):
+
+AttributeError: module 'torch.library' has no attribute 'register_fake'
+
+The above exception was the direct cause of the following exception:
+
+ModuleNotFoundError                       Traceback (most recent call last)
+/tmp/ipykernel_23/3313648753.py in <cell line: 0>()
+      6 print('class weights:', class_weights)
+      7 
+----> 8 model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, num_labels=3).to(DEVICE)
+
+/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in from_pretrained(cls, pretrained_model_name_or_path, *model_args, **kwargs)
+    367             )
+    368         elif type(config) in cls._model_mapping:
+--> 369             model_class = _get_model_class(config, cls._model_mapping)
+    370             if model_class.config_class == config.sub_configs.get("text_config", None):
+    371                 config = config.get_text_config()
+
+/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in _get_model_class(config, model_mapping)
+    176 
+    177 def _get_model_class(config, model_mapping):
+--> 178     supported_models = model_mapping[type(config)]
+    179     if not isinstance(supported_models, (list, tuple)):
+    180         return supported_models
+
+/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in __getitem__(self, key)
+    568         if model_type in self._model_mapping:
+    569             model_name = self._model_mapping[model_type]
+--> 570             return self._load_attr_from_module(model_type, model_name)
+    571 
+    572         # Maybe there was several model types associated with this config.
+
+/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in _load_attr_from_module(self, model_type, attr)
+    582         if module_name not in self._modules:
+    583             self._modules[module_name] = importlib.import_module(f".{module_name}", "transformers.models")
+--> 584         return getattribute_from_module(self._modules[module_name], attr)
+    585 
+    586     def keys(self) -> list[type[PreTrainedConfig]]:
+
+/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in getattribute_from_module(module, attr)
+    494     if isinstance(attr, tuple):
+    495         return tuple(getattribute_from_module(module, a) for a in attr)
+--> 496     if hasattr(module, attr):
+    497         return getattr(module, attr)
+    498     # Some of the mappings have entries model_type -> object of another model type. In that case we try to grab the
+
+/usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in __getattr__(self, name)
+   2180                             ) from e
+   2181                 else:
+-> 2182                     raise ModuleNotFoundError(
+   2183                         f"Could not import module '{name}'. Are this object's requirements defined correctly?"
+   2184                     ) from e
+
+ModuleNotFoundError: Could not import module 'RobertaForSequenceClassification'. Are this object's requirements defined correctly?
+
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 135322 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 433862 bytes to __results__.html

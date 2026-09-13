@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+joblib
+scikit-learn
+pandas
+numpy
+# PhoBERT/XLM-R backend path (only needed once MODEL_BACKEND=phobert is used)
+torch
+transformers
+pyvi
+# Kaggle notebook + LLM feature engineering scripts
+pyyaml
+tqdm
+anthropic

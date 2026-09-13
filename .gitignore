@@ -1,0 +1,9 @@
+data/
+*.csv
+backend/model/*.joblib
+*.pt
+*.safetensors
+*.bin
+__pycache__/
+.ipynb_checkpoints/
+kaggle_output_v3/
