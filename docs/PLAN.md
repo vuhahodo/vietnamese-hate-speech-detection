@@ -13,7 +13,11 @@ Quy ước: `[ ]` chưa làm, `[~]` đang làm, `[x]` xong và có bằng chứn
 ## 0. Phát biểu đề tài
 
 - **Bài toán:** ViSpamReviews, 2 nhiệm vụ: (T1) spam / không spam; (T2) loại spam: NO-SPAM, SPAM-1 review giả, SPAM-2 chỉ nói thương hiệu, SPAM-3 không liên quan.
-- **Pipeline kế thừa:** trích nhiều khối đặc trưng → chọn đặc trưng bằng metaheuristic → stacking ensemble (khuôn của Anees et al. 2025, dùng Harris Hawks Optimization); dữ liệu, split và baseline của Dinh, Luu, Nguyen 2022.
+- **Pipeline kế thừa:**
+  - Chỗ dựa có phản biện: Al-Zoubi, Mora, Faris (IEEE Access 2023; ESWA 2025). Trong pipeline này, HHO tối ưu đồng thời siêu tham số SVM và trọng số/chọn đặc trưng cho phát hiện review spam.
+  - Khuôn khối đặc trưng + stacking: Anees et al. 2025 (preprint).
+  - Dữ liệu, split và baseline: Dinh, Luu, Nguyen 2022. Bài này **không có baseline ML cổ điển**: đây là khoảng trống của RQ1.
+  - Danh mục bài và số liệu gốc: `docs/papers/README.md`.
 - **Thành phần thay thế (đóng góp):** thay HHO đơn mục tiêu bằng tối ưu tiến hóa **đa mục tiêu** (NSGA-II và DE đa mục tiêu) chọn đồng thời khối đặc trưng, siêu tham số và trọng số ensemble, cho ra tập Pareto giữa macro F1 và chi phí (số đặc trưng hoặc độ trễ).
 - **Câu hỏi nghiên cứu:**
   - RQ1: Pipeline cổ điển tốt nhất đạt bao nhiêu so với PhoBERT/ViSoBERT trên cùng split?
@@ -57,10 +61,10 @@ data/                   KHÔNG commit (giấy phép CC-BY-NC, truy cập có ki�
 ### R. Dọn repo
 - [x] **R1** Lưu bản cũ: tag `archive/vihsd-hate-speech` (commit `42cf912`) và bản sao toàn bộ thư mục ở `D:\HocTap\N4_K1\_archive_nlp_vihsd_vihos\`.
 - [x] **R2** Xóa mã ViHSD/ViHOS cũ khỏi cây làm việc; viết lại README, `.gitignore`, `requirements.txt`.
-- [ ] **R3** Commit "refactor: replace ViHSD project with ViSpamReviews research skeleton" và push (repo đang **public**). Cân nhắc đổi tên repo GitHub, ví dụ `vietnamese-spam-review-ea`. ĐKHT: `git ls-files` không còn file ViHSD; không có dữ liệu hoặc PDF trong git.
+- [~] **R3** Đã commit cục bộ `6200420`; chưa push (cần bạn cho phép). Commit "refactor: replace ViHSD project with ViSpamReviews research skeleton" và push (repo đang **public**). Cân nhắc đổi tên repo GitHub, ví dụ `vietnamese-spam-review-ea`. ĐKHT: `git ls-files` không còn file ViHSD; không có dữ liệu hoặc PDF trong git.
 
 ### P0. Tài liệu và dữ liệu
-- [ ] **P0.1 Bài báo.** Tải về `docs/papers/` (không commit PDF):
+- [~] **P0.1 Bài báo.** Đã tải 5 bài arXiv và đọc bảng kết quả (`docs/papers/README.md`). Còn: tải tay 2 bài Al-Zoubi (Granada chặn tải tự động), xác nhận nơi đăng của 2207.14636 và 2402.12625. Tải về `docs/papers/` (không commit PDF):
   - Dinh, Luu, Nguyen. Detecting Spam Reviews on Vietnamese E-commerce Websites. arXiv 2207.14636.
   - Dinh, Luu. Metadata Integration for Spam Reviews Detection on Vietnamese E-commerce Websites. IJALP 2024, arXiv 2405.13292.
   - Anees et al. An Optimized ML Classifier for Detecting Fake Reviews Using Extracted Features. arXiv 2511.21716 (preprint).
@@ -68,7 +72,7 @@ data/                   KHÔNG commit (giấy phép CC-BY-NC, truy cập có ki�
   - Một bài NSGA-II cho chọn đặc trưng đã qua phản biện (tìm thêm; ứng viên: Compact NSGA-II, arXiv 2402.12625).
   
   ĐKHT: `docs/papers/README.md` có thông tin xuất bản đã đối chiếu trang gốc, bảng kết quả gốc (T1, T2, macro F1) chép đúng từ bài, ghi rõ split và tiền xử lý của từng bài.
-- [ ] **P0.2 Dữ liệu.** Tải CSV mirror `visolex/ViSpamReviews` vào `data/`. ĐKHT: SHA-256 khớp `675ba637…2690` (hoặc ghi lại hash mới và lý do); tái lập đúng 14.181 / 1.587 / 3.971; thống kê nhãn T2 theo split; `tests/test_data.py` pass.
+- [x] **P0.2 Dữ liệu.** Tải CSV mirror `visolex/ViSpamReviews` vào `data/raw/`. ĐKHT: SHA-256 khớp `675ba637…2690`; tái lập đúng 14.181 / 1.587 / 3.971; thống kê nhãn T2 theo split; `tests/test_data.py` pass. Bằng chứng: `results/data_audit.json`, `tests/test_data.py` (4 pass); hash khớp; phân bố nhãn khớp Hình 1 bài gốc. Lưu ý: test sau bỏ trùng còn 3.971 (bài gốc 3.974), nên khi so với bài gốc phải báo thêm số trên 3.974 dòng gốc. SPAM-1 chỉ có 61 dòng test: macro F1 T2 dao động lớn, bắt buộc có khoảng tin cậy.
 - [ ] **P0.3 Giao thức đánh giá.** `vispam/evaluate.py`: macro F1, F1 từng lớp, bootstrap 95% CI (1.000 lần), McNemar giữa 2 mô hình, độ trễ CPU trên 1.000 review. ĐKHT: có test đơn vị; quy tắc "test chấm 1 lần" ghi trong README.
 
 ### P1. Tái lập và baseline (RQ1)

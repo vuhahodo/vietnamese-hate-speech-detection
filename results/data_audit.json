@@ -1,0 +1,53 @@
+{
+  "source": "https://huggingface.co/datasets/visolex/ViSpamReviews/resolve/main/ViSpamReviews.csv",
+  "sha256": "675ba637b15e2521f2014d529ad71b14959aee4d2a51bad841a0b720b82b2690",
+  "source_splits": {
+    "train": 14306,
+    "dev": 1590,
+    "test": 3974
+  },
+  "used_splits": {
+    "train": 14181,
+    "dev": 1587,
+    "test": 3971
+  },
+  "removed_exact_duplicates": {
+    "test": 3,
+    "dev": 3,
+    "train": 125
+  },
+  "task1_counts": {
+    "train": {
+      "0": 10533,
+      "1": 3648
+    },
+    "dev": {
+      "0": 1157,
+      "1": 430
+    },
+    "test": {
+      "0": 2866,
+      "1": 1105
+    }
+  },
+  "task2_counts": {
+    "train": {
+      "0": 10533,
+      "1": 185,
+      "2": 1079,
+      "3": 2384
+    },
+    "dev": {
+      "0": 1157,
+      "1": 25,
+      "2": 127,
+      "3": 278
+    },
+    "test": {
+      "0": 2866,
+      "1": 61,
+      "2": 319,
+      "3": 725
+    }
+  }
+}
