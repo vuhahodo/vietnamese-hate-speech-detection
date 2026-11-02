@@ -64,7 +64,7 @@ data/                   KHÔNG commit (giấy phép CC-BY-NC, truy cập có ki�
 - [~] **R3** Đã commit cục bộ `6200420`; chưa push (cần bạn cho phép). Commit "refactor: replace ViHSD project with ViSpamReviews research skeleton" và push (repo đang **public**). Cân nhắc đổi tên repo GitHub, ví dụ `vietnamese-spam-review-ea`. ĐKHT: `git ls-files` không còn file ViHSD; không có dữ liệu hoặc PDF trong git.
 
 ### P0. Tài liệu và dữ liệu
-- [~] **P0.1 Bài báo.** Đã tải 5 bài arXiv và đọc bảng kết quả (`docs/papers/README.md`). Còn: tải tay 2 bài Al-Zoubi (Granada chặn tải tự động), xác nhận nơi đăng của 2207.14636 và 2402.12625. Tải về `docs/papers/` (không commit PDF):
+- [~] **P0.1 Bài báo.** Đã tải 5 bài arXiv và đọc bảng kết quả (`docs/papers/README.md`). Đã đọc toàn văn bài Al-Zoubi 2023 (mục 3 của README đó). Còn: bài ESWA 2025 chưa có PDF, xác nhận nơi đăng của 2207.14636 và 2402.12625, đọc Bảng 6 (dạng ảnh) của bài 2023 để biết quần thể và số vòng lặp của HHO. Tải về `docs/papers/` (không commit PDF):
   - Dinh, Luu, Nguyen. Detecting Spam Reviews on Vietnamese E-commerce Websites. arXiv 2207.14636.
   - Dinh, Luu. Metadata Integration for Spam Reviews Detection on Vietnamese E-commerce Websites. IJALP 2024, arXiv 2405.13292.
   - Anees et al. An Optimized ML Classifier for Detecting Fake Reviews Using Extracted Features. arXiv 2511.21716 (preprint).
@@ -73,19 +73,19 @@ data/                   KHÔNG commit (giấy phép CC-BY-NC, truy cập có ki�
   
   ĐKHT: `docs/papers/README.md` có thông tin xuất bản đã đối chiếu trang gốc, bảng kết quả gốc (T1, T2, macro F1) chép đúng từ bài, ghi rõ split và tiền xử lý của từng bài.
 - [x] **P0.2 Dữ liệu.** Tải CSV mirror `visolex/ViSpamReviews` vào `data/raw/`. ĐKHT: SHA-256 khớp `675ba637…2690`; tái lập đúng 14.181 / 1.587 / 3.971; thống kê nhãn T2 theo split; `tests/test_data.py` pass. Bằng chứng: `results/data_audit.json`, `tests/test_data.py` (4 pass); hash khớp; phân bố nhãn khớp Hình 1 bài gốc. Lưu ý: test sau bỏ trùng còn 3.971 (bài gốc 3.974), nên khi so với bài gốc phải báo thêm số trên 3.974 dòng gốc. SPAM-1 chỉ có 61 dòng test: macro F1 T2 dao động lớn, bắt buộc có khoảng tin cậy.
-- [ ] **P0.3 Giao thức đánh giá.** `vispam/evaluate.py`: macro F1, F1 từng lớp, bootstrap 95% CI (1.000 lần), McNemar giữa 2 mô hình, độ trễ CPU trên 1.000 review. ĐKHT: có test đơn vị; quy tắc "test chấm 1 lần" ghi trong README.
+- [~] **P0.3 Giao thức đánh giá.** `vispam/evaluate.py`: macro F1, F1 từng lớp, bootstrap 95% CI (1.000 lần), McNemar giữa 2 mô hình, độ trễ CPU trên 1.000 review. ĐKHT: có test đơn vị; quy tắc "test chấm 1 lần" ghi trong README. Bằng chứng: `vispam/evaluate.py`, `tests/test_evaluate.py` (8 test evaluate pass, tổng 19 test pass cả repo). Lưu ý: độ trễ trong CSV baseline chỉ đo `predict` trên ma trận tính sẵn, chưa gồm trích đặc trưng.
 
 ### P1. Tái lập và baseline (RQ1)
-- [ ] **P1.1 Khối đặc trưng:**
+- [~] **P1.1 Khối đặc trưng:**
   - B1: TF-IDF từ 1-2 gram (tách từ pyvi);
   - B2: TF-IDF ký tự 2-5 gram;
   - B3: thống kê bề mặt: độ dài, tỉ lệ chữ hoa, emoji, ký tự lặp, số/URL/số điện thoại, dấu câu;
   - B4: từ điển: tên thương hiệu, cụm quảng cáo, từ khen chung chung (ghi nguồn từ điển);
   - B5 (tùy chọn): xác suất PhoBERT từ Kaggle, chỉ dùng làm điểm so sánh lai.
   
-  ĐKHT: mỗi khối có cache, chỉ fit trên train; test đơn vị cho B3/B4.
-- [ ] **P1.2 Bộ phân loại:** LR, LinearSVC, ComplementNB, SGD, LightGBM hoặc RF trên B3/B4, và stacking. Chạy cả T1 và T2. ĐKHT: `results/baselines_{t1,t2}.csv`; LR + B2 tái lập 0,835 ± 0,005 trên T1; bảng so với số trong bài gốc.
-- [ ] **P1.3 Độ nhạy gần trùng.** ĐKHT: tái lập con số 71/3.971 và F1 trên test đã lọc cho mô hình tốt nhất.
+  ĐKHT: mỗi khối có cache, chỉ fit trên train; test đơn vị cho B3/B4. Bằng chứng: `vispam/features.py` (B1-B4, Composite, cache), `tests/test_features.py` (7 test features pass, tổng 19 pass).
+- [~] **P1.2 Bộ phân loại:** LR, LinearSVC, ComplementNB, SGD, LightGBM hoặc RF trên B3/B4, và stacking. Chạy cả T1 và T2. ĐKHT: `results/baselines_{t1,t2}.csv`; LR + B2 tái lập 0,835 ± 0,005 trên T1; bảng so với số trong bài gốc. Bằng chứng: `scripts/run_baselines.py`, `results/baselines_t1.csv`, `results/baselines_t2.csv`, `results/repro_t1_test.json` (repro test macro F1 0.8345 [0.8224, 0.8469], delta -0.0005).
+- [~] **P1.3 Độ nhạy gần trùng.** ĐKHT: tái lập con số 71/3.971 và F1 trên test đã lọc cho mô hình tốt nhất. Bằng chứng: `scripts/near_duplicate_sensitivity.py`, `results/near_duplicate_sensitivity.json` (khớp đúng 71/3.971 mẫu test, delta macro F1 -0.0065).
 
 ### P2. Tối ưu tiến hóa (RQ2, RQ3)
 - [ ] **P2.1 Không gian tìm kiếm** (`vispam/search/space.py`):

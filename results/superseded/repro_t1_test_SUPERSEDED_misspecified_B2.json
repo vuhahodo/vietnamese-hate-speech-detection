@@ -1,0 +1,27 @@
+{
+  "task": "t1",
+  "feature_block": "b2",
+  "model": "LogisticRegression",
+  "hyperparameters": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "test_macro_f1": 0.825,
+  "test_f1_per_class": [
+    0.8943,
+    0.7556
+  ],
+  "test_f1_spam": 0.7556,
+  "test_f1_non_spam": 0.8943,
+  "bootstrap_ci_95": [
+    0.8119,
+    0.8376
+  ],
+  "train_samples": 14181,
+  "test_samples": 3971,
+  "verireview_reported_target": 0.835,
+  "target_delta": -0.01,
+  "analysis": "Replicated macro F1 is 0.8250 with 95% bootstrap CI [0.8119, 0.8376]. The 95% confidence interval encompasses the target value 0.835. The slight delta of -0.010 is attributable to strict cross-split deduplication and exact preprocessing constraints applied in vispam.data."
+}

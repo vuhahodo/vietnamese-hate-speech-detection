@@ -15,7 +15,7 @@ PDF và bản trích văn bản (`.txt`) chỉ lưu cục bộ, không commit (r
 | Dữ liệu + baseline gốc | Co Van Dinh, Son T. Luu, Anh Gia-Tuan Nguyen. *Detecting Spam Reviews on Vietnamese E-commerce Websites.* arXiv 2207.14636 | arXiv; cần kiểm nơi đăng chính thức (thường được trích là ACIIDS 2022) | `arxiv_2207.14636.pdf` |
 | Bản mở rộng có metadata | Co Van Dinh, Son T. Luu. *Metadata Integration for Spam Reviews Detection on Vietnamese E-commerce Websites.* International Journal of Asian Language Processing (World Scientific), 2024. arXiv 2405.13292 | Tạp chí | `arxiv_2405.13292.pdf` |
 | Mức trần PLM | Nguyen et al. *ViSoBERT: A Pre-Trained Language Model for Vietnamese Social Media Text Processing.* EMNLP 2023. arXiv 2310.11166 | Hội nghị | `arxiv_2310.11166.pdf` |
-| **Pipeline kế thừa (có phản biện)** | Ala' M. Al-Zoubi, Antonio M. Mora, Hossam Faris. *A Multilingual Spam Reviews Detection Based on Pre-Trained Word Embedding and Weighted Swarm Support Vector Machines.* IEEE Access 11 (2023) 72250-72271. doi:10.1109/ACCESS.2023.3293641 | Tạp chí, truy cập mở | **chưa tải**: https://digibug.ugr.es/handle/10481/84803 (chặn tải tự động, tải bằng trình duyệt) |
+| **Pipeline kế thừa (có phản biện)** | Ala' M. Al-Zoubi, Antonio M. Mora, Hossam Faris. *A Multilingual Spam Reviews Detection Based on Pre-Trained Word Embedding and Weighted Swarm Support Vector Machines.* IEEE Access 11 (2023) 72250-72271. doi:10.1109/ACCESS.2023.3293641 | Tạp chí, truy cập mở | đã tải và đã đọc: `A_Multilingual_Spam_Reviews_Detection.pdf` |
 | Pipeline kế thừa, bản mới | Al-Zoubi, Mora, Faris, Qaddoura. *A hybrid TwinSVM-HHO model for multilingual spam review detection using sentiment features and pre-trained embeddings.* Expert Systems with Applications 287 (2025) 128160. doi:10.1016/j.eswa.2025.128160 | Tạp chí | **chưa tải**: https://digibug.ugr.es/handle/10481/110424 |
 | Khuôn khối đặc trưng + stacking | Shabbir Anees et al. *An Optimized Machine Learning Classifier for Detecting Fake Reviews Using Extracted Features.* arXiv 2511.21716 | Preprint, chưa phản biện: chỉ dùng làm khuôn | `arxiv_2511.21716.pdf` |
 | Phương pháp EA | *Compact NSGA-II for Multi-objective Feature Selection.* arXiv 2402.12625 | Cần kiểm nơi đăng | `arxiv_2402.12625.pdf` |
@@ -49,11 +49,23 @@ T1 = spam / không spam; T2 = loại spam (4 lớp). Chỉ số %, test set.
 
 **Kết quả của nhóm VeriReview (AI4Life, split v1 đã bỏ trùng 14.181 / 1.587 / 3.971), T1:** TF-IDF ký tự 2-5 + LR: 83,5; PhoBERT-base-v2: 89,5.
 
-## 3. Pipeline kế thừa của Al-Zoubi, Mora, Faris (theo tóm tắt, cần đọc toàn văn)
+## 3. Pipeline kế thừa của Al-Zoubi, Mora, Faris (IEEE Access 2023, đã đọc toàn văn)
 
-Văn bản → embedding tiền huấn luyện (BERT, FastText, MUSE) → SVM có trọng số (WSVM); HHO tối ưu đồng thời siêu tham số SVM và trọng số đặc trưng; đánh giá trên tiếng Anh, Tây Ban Nha, Ả Rập và tập đa ngôn ngữ. Bản 2025 thay bằng TwinSVM và thêm đặc trưng cảm xúc.
+Số trang theo bản PDF trong thư mục này. Phần dưới do Claude đọc lại từ văn bản gốc (bản Gemini báo "xong" nhưng chưa ghi gì).
 
-**Điểm thay thế của đề tài:** HHO đơn mục tiêu → NSGA-II / DE đa mục tiêu (độ chính xác và chi phí đặc trưng), áp dụng cho tiếng Việt; chưa có công bố nào làm hướng này trên ViSpamReviews.
+- **Mã hóa lời giải (trang 11):** vectơ D + 2 số thực trong [0, 1]. Hai phần tử đầu là C và gamma của SVM, đổi thang bằng min-max sang [0, 35000] và [0, 32] (công thức 10). D phần tử còn lại là **trọng số của từng đặc trưng**, nhân vào cột đặc trưng tương ứng. Vậy "weighted SVM" ở đây là trọng số đặc trưng liên tục, không phải chọn tập con nhị phân; D bằng số chiều đặc trưng của bộ dữ liệu (Bảng 4).
+- **Hàm fitness (công thức 11, trang 11):** trung bình độ chính xác (accuracy) của SVM trên các fold. **Đơn mục tiêu**, không có phạt số đặc trưng hay thời gian.
+- **Giao thức (trang 11-12):** CV 3 fold bên trong khi huấn luyện, và CV 10 fold bên ngoài (chạy lặp 10 lần, mỗi lần một phần dữ liệu để kiểm tra). Công thức 11 định nghĩa N là số mẫu của *tập kiểm tra*; nếu fitness thật sự tính trên fold kiểm tra thì chọn mô hình và báo kết quả dùng chung một dữ liệu, độ chính xác báo cáo sẽ lạc quan. Đây là cách đọc văn bản, cần xác nhận khi tái lập.
+- **Dữ liệu:** tweet về sản phẩm bằng tiếng Ả Rập, Anh, Tây Ban Nha và tập đa ngôn ngữ; mỗi tập có các phiên bản biểu diễn TF-IDF, NGram-3, WE100/WE400 (embedding từ BERT, FastText, MUSE) và Words (one-hot).
+- **Thí nghiệm:** (I) bộ phân loại truyền thống (J48, k-NN, NB...); (II) SVM kết hợp MVO, GA, PSO, GOA, SSA, HHO; (III) WSVM-HHO so với HHO-FsSVM (chọn đặc trưng); (IV) thêm đặc trưng cảm xúc. Chạy bằng MATLAB 2016.
+- **Kết quả chính (accuracy, Bảng 11 và phần kết luận):** Ả Rập 89,565; Anh 88,163; Tây Ban Nha 71,913; đa ngôn ngữ 84,270 (độ lệch chuẩn 1,429 ở một con số trích trong bài).
+- **Điểm yếu phương pháp luận (đối chiếu từ khóa Wilcoxon, Friedman, t-test, p-value trong văn bản: không có):**
+  - không có kiểm định thống kê giữa các thuật toán, chỉ có độ lệch chuẩn;
+  - chỉ báo accuracy, không báo macro F1 dù dữ liệu mất cân bằng;
+  - chỉ một mục tiêu, nên không có đánh đổi độ chính xác và chi phí;
+  - ngân sách đánh giá của các metaheuristic chỉ nằm ở Bảng 6 (dạng ảnh, văn bản trích ra không đọc được); cần xem trực tiếp trang 14 để biết có so cùng ngân sách hay không.
+
+**Điểm thay thế của đề tài:** giữ ý tưởng "tối ưu đồng thời siêu tham số và trọng số/chọn đặc trưng", đổi sang **đa mục tiêu** (macro F1 và chi phí), dùng macro F1, nhiều seed, kiểm định thống kê và so cùng ngân sách; áp dụng cho tiếng Việt (chưa thấy công bố nào trên ViSpamReviews).
 
 ## 4. Khuôn của Anees et al. (preprint)
 

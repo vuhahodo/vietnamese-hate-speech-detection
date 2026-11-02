@@ -1,0 +1,23 @@
+task,feature_block,model_name,best_params,cv_macro_f1_mean,cv_macro_f1_std,dev_macro_f1,dev_per_class_f1,latency_ms_per_item,seed
+t1,b1,LogisticRegression,"{""C"": 10.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42}",0.7677,0.0094,0.7844,"[0.8827, 0.686]",0.0003,42
+t1,b1,LinearSVC,"{""C"": 1.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42, ""tol"": 0.001}",0.7625,0.0115,0.7812,"[0.8817, 0.6807]",0.0002,42
+t1,b1,ComplementNB,"{""alpha"": 0.1}",0.6904,0.0072,0.7003,"[0.858, 0.5426]",0.0006,42
+t1,b1,SGDClassifier,"{""loss"": ""modified_huber"", ""alpha"": 0.0001, ""max_iter"": 1000, ""random_state"": 42}",0.7759,0.0134,0.7814,"[0.8969, 0.6658]",0.0004,42
+t1,b2,LogisticRegression,"{""C"": 10.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42}",0.8381,0.0075,0.8217,"[0.9024, 0.7411]",0.0024,42
+t1,b2,LinearSVC,"{""C"": 1.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42, ""tol"": 0.001}",0.8355,0.0067,0.8243,"[0.905, 0.7436]",0.0054,42
+t1,b2,ComplementNB,"{""alpha"": 0.1}",0.7979,0.0074,0.7794,"[0.9025, 0.6562]",0.0063,42
+t1,b2,SGDClassifier,"{""loss"": ""modified_huber"", ""alpha"": 0.0001, ""max_iter"": 1000, ""random_state"": 42}",0.8388,0.0081,0.8278,"[0.9164, 0.7393]",0.0078,42
+t1,b3+b4,LogisticRegression,"{""C"": 10.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42}",0.7596,0.006,0.778,"[0.88, 0.676]",0.0003,42
+t1,b3+b4,LinearSVC,"{""C"": 1.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42, ""tol"": 0.001}",0.7663,0.0079,0.7746,"[0.881, 0.6683]",0.0002,42
+t1,b3+b4,ComplementNB,"{""alpha"": 1.0}",0.6761,0.0047,0.6871,"[0.8244, 0.5499]",0.0004,42
+t1,b3+b4,SGDClassifier,"{""loss"": ""modified_huber"", ""alpha"": 0.001, ""max_iter"": 1000, ""random_state"": 42}",0.7345,0.0464,0.7343,"[0.891, 0.5776]",0.0002,42
+t1,b3+b4,RandomForest,"{""n_estimators"": 100, ""max_depth"": 15, ""class_weight"": ""balanced"", ""random_state"": 42, ""n_jobs"": 4}",0.795,0.0095,0.7841,"[0.9034, 0.6648]",0.0612,42
+t1,b1+b2,LogisticRegression,"{""C"": 10.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42}",0.8392,0.0098,0.8372,"[0.9132, 0.7612]",0.0013,42
+t1,b1+b2,LinearSVC,"{""C"": 0.1, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42, ""tol"": 0.001}",0.8372,0.0069,0.8297,"[0.9067, 0.7526]",0.0018,42
+t1,b1+b2,ComplementNB,"{""alpha"": 0.1}",0.8117,0.0082,0.7905,"[0.9051, 0.6759]",0.007,42
+t1,b1+b2,SGDClassifier,"{""loss"": ""modified_huber"", ""alpha"": 0.0001, ""max_iter"": 1000, ""random_state"": 42}",0.8384,0.0101,0.8317,"[0.9185, 0.7448]",0.0016,42
+t1,b1+b2+b3+b4,LogisticRegression,"{""C"": 10.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42}",0.851,0.0056,0.8453,"[0.9168, 0.7737]",0.0012,42
+t1,b1+b2+b3+b4,LinearSVC,"{""C"": 0.1, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""random_state"": 42, ""tol"": 0.001}",0.8536,0.004,0.8507,"[0.9179, 0.7835]",0.0013,42
+t1,b1+b2+b3+b4,ComplementNB,"{""alpha"": 0.1}",0.8122,0.005,0.7987,"[0.907, 0.6903]",0.0061,42
+t1,b1+b2+b3+b4,SGDClassifier,"{""loss"": ""modified_huber"", ""alpha"": 0.0001, ""max_iter"": 1000, ""random_state"": 42}",0.8436,0.0046,0.8381,"[0.9226, 0.7536]",0.0036,42
+t1,stacking(b1+b2+b3+b4),StackingClassifier,"{""top3"": [[""LinearSVC"", ""b1+b2+b3+b4""], [""LogisticRegression"", ""b1+b2+b3+b4""], [""SGDClassifier"", ""b1+b2+b3+b4""]]}",0.8384,0.0081,0.8381,"[0.905, 0.7712]",0.0079,42

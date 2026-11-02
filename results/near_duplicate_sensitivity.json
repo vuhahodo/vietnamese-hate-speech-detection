@@ -1,0 +1,42 @@
+{
+  "analysis": "near_duplicate_sensitivity",
+  "threshold": 0.9,
+  "test_total": 3971,
+  "near_duplicate_count": 71,
+  "near_duplicate_ratio": 0.0179,
+  "kept_test_count": 3900,
+  "expected_near_duplicates_verireview": "~71/3971",
+  "cosine_distribution_percentiles": {
+    "p10": 0.1955,
+    "p25": 0.2359,
+    "p50": 0.3106,
+    "p75": 0.4344,
+    "p90": 0.5973,
+    "p95": 0.7342,
+    "p99": 0.9663,
+    "p100": 1.0
+  },
+  "baseline_model": "LogisticRegression(C=1.0, class_weight='balanced')",
+  "all_test": {
+    "sample_count": 3971,
+    "macro_f1": 0.8345,
+    "f1_non_spam": 0.9032,
+    "f1_spam": 0.7659,
+    "bootstrap_ci_95": [
+      0.8224,
+      0.8469
+    ]
+  },
+  "filtered_test": {
+    "sample_count": 3900,
+    "macro_f1": 0.828,
+    "f1_non_spam": 0.9034,
+    "f1_spam": 0.7527,
+    "bootstrap_ci_95": [
+      0.8147,
+      0.8426
+    ]
+  },
+  "delta_macro_f1": -0.0065,
+  "execution_seconds": 18.02
+}
