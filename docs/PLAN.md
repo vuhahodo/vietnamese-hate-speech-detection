@@ -88,20 +88,20 @@ data/                   KHÔNG commit (giấy phép CC-BY-NC, truy cập có ki�
 - [~] **P1.3 Độ nhạy gần trùng.** ĐKHT: tái lập con số 71/3.971 và F1 trên test đã lọc cho mô hình tốt nhất. Bằng chứng: `scripts/near_duplicate_sensitivity.py`, `results/near_duplicate_sensitivity.json` (khớp đúng 71/3.971 mẫu test, delta macro F1 -0.0065).
 
 ### P2. Tối ưu tiến hóa (RQ2, RQ3)
-- [ ] **P2.1 Không gian tìm kiếm** (`vispam/search/space.py`):
+- [~] **P2.1 Không gian tìm kiếm** (`vispam/search/space.py`). Bằng chứng: 10 gen (4 tỉ lệ giữ, 4 trọng số khối, log10 C, loại mô hình); `tests/test_search.py`; một lần CV 5 fold trung bình khoảng 3 s (LinearSVC `tol=1e-2`, `max_iter=300`). B4 phải log-scale, nếu không LinearSVC chậm gấp 7-25 lần. Chưa làm: ngân sách 2.000 (hiện 500):
   - mặt nạ nhị phân 4-5 khối đặc trưng;
   - mỗi khối: tỉ lệ đặc trưng giữ lại theo chi² (liên tục);
   - siêu tham số: C của LR/SVM, alpha của NB;
   - trọng số stacking (simplex).
   
   ĐKHT: giải mã mọi vectơ ra cấu hình hợp lệ; ước tính thời gian 1 lần đánh giá (CV 5 fold) dưới 5 giây trên laptop nhờ cache.
-- [ ] **P2.2 Mục tiêu:** f1 = −macro F1 (CV 5 fold trên train), f2 = số đặc trưng (hoặc độ trễ đo được). Tùy chọn ràng buộc precision spam ≥ ngưỡng, xử lý bằng Deb's rules.
-- [ ] **P2.3 Thuật toán:**
+- [~] **P2.2 Mục tiêu** (đã làm: macro F1 CV và số đặc trưng; chưa làm: ràng buộc precision): f1 = −macro F1 (CV 5 fold trên train), f2 = số đặc trưng (hoặc độ trễ đo được). Tùy chọn ràng buộc precision spam ≥ ngưỡng, xử lý bằng Deb's rules.
+- [~] **P2.3 Thuật toán** (`vispam/search/algorithms.py`; NSGA-II, MODE, HHO, GA, GA có phạt, random, grid; ngân sách 500, quần thể 30, 10 seed; T1 xong, T2 chưa chạy):
   - đề xuất: NSGA-II (pymoo) và DE đa mục tiêu tự cài (DE/rand/1/bin + non-dominated sorting);
   - đối chứng: HHO (kế thừa từ Anees), GA đơn mục tiêu, random search, grid search.
   
   ĐKHT: cùng ngân sách (ví dụ 2.000 lần đánh giá); 10 seed; log hội tụ.
-- [ ] **P2.4 So sánh:** hypervolume (cùng điểm tham chiếu), macro F1 trên dev của điểm knee, Wilcoxon và Friedman giữa các thuật toán. ĐKHT: `results/search_summary.csv`, hình Pareto front, hình hội tụ; báo cả khi NSGA-II không hơn random search.
+- [~] **P2.4 So sánh** (T1 xong: `results/search_summary_t1.csv`, `results/search_stats_t1.json`; chưa có hình Pareto/hội tụ, chưa chạy T2): hypervolume (cùng điểm tham chiếu), macro F1 trên dev của điểm knee, Wilcoxon và Friedman giữa các thuật toán. ĐKHT: `results/search_summary.csv`, hình Pareto front, hình hội tụ; báo cả khi NSGA-II không hơn random search.
 - [ ] **P2.5 Đánh giá cuối:** chọn 1-3 cấu hình từ Pareto front theo dev, chấm test 1 lần, bootstrap CI, McNemar với baseline P1 và PhoBERT. ĐKHT: `results/final_test.json`.
 
 ### P3. Phân tích (RQ4)

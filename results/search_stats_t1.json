@@ -1,0 +1,150 @@
+{
+  "n_seeds": 10,
+  "algos": [
+    "ga",
+    "ga_scalar",
+    "grid",
+    "hho",
+    "mode",
+    "nsga2",
+    "random"
+  ],
+  "hv_mean": {
+    "ga": 0.7778,
+    "ga_scalar": 1.0369,
+    "grid": 1.236,
+    "hho": 1.2719,
+    "mode": 1.3755,
+    "nsga2": 1.3247,
+    "random": 1.2335
+  },
+  "hv_std": {
+    "ga": 0.2585,
+    "ga_scalar": 0.1893,
+    "grid": 0.0213,
+    "hho": 0.0507,
+    "mode": 0.0722,
+    "nsga2": 0.0774,
+    "random": 0.0617
+  },
+  "friedman": {
+    "stat": 50.014285714285734,
+    "p": 4.670170758413437e-09
+  },
+  "mean_rank_hv": {
+    "ga": 7.0,
+    "ga_scalar": 5.9,
+    "grid": 4.3,
+    "hho": 3.2,
+    "mode": 1.4,
+    "nsga2": 2.2,
+    "random": 4.0
+  },
+  "wilcoxon_hv": {
+    "nsga2_vs_ga": {
+      "mean_diff_hv": 0.5468382501128257,
+      "p": 0.001953125,
+      "p_holm": 0.0234375
+    },
+    "nsga2_vs_ga_scalar": {
+      "mean_diff_hv": 0.2877613919321458,
+      "p": 0.001953125,
+      "p_holm": 0.0234375
+    },
+    "nsga2_vs_grid": {
+      "mean_diff_hv": 0.08869354445157156,
+      "p": 0.009765625,
+      "p_holm": 0.05859375
+    },
+    "nsga2_vs_hho": {
+      "mean_diff_hv": 0.0527364589865041,
+      "p": 0.037109375,
+      "p_holm": 0.111328125
+    },
+    "nsga2_vs_mode": {
+      "mean_diff_hv": -0.05083853034371553,
+      "p": 0.275390625,
+      "p_holm": 0.55078125
+    },
+    "nsga2_vs_random": {
+      "mean_diff_hv": 0.09119470477488092,
+      "p": 0.013671875,
+      "p_holm": 0.068359375
+    },
+    "mode_vs_ga": {
+      "mean_diff_hv": 0.5976767804565412,
+      "p": 0.001953125,
+      "p_holm": 0.0234375
+    },
+    "mode_vs_ga_scalar": {
+      "mean_diff_hv": 0.3385999222758612,
+      "p": 0.001953125,
+      "p_holm": 0.0234375
+    },
+    "mode_vs_grid": {
+      "mean_diff_hv": 0.1395320747952871,
+      "p": 0.001953125,
+      "p_holm": 0.0234375
+    },
+    "mode_vs_hho": {
+      "mean_diff_hv": 0.10357498933021962,
+      "p": 0.013671875,
+      "p_holm": 0.068359375
+    },
+    "mode_vs_nsga2": {
+      "mean_diff_hv": 0.05083853034371553,
+      "p": 0.275390625,
+      "p_holm": 0.55078125
+    },
+    "mode_vs_random": {
+      "mean_diff_hv": 0.14203323511859645,
+      "p": 0.001953125,
+      "p_holm": 0.0234375
+    }
+  },
+  "best_cv_mean": {
+    "ga": 0.8596,
+    "ga_scalar": 0.8574,
+    "grid": 0.8552,
+    "hho": 0.8556,
+    "mode": 0.8574,
+    "nsga2": 0.857,
+    "random": 0.8561
+  },
+  "knee_cv_mean": {
+    "ga": 0.8558,
+    "ga_scalar": 0.8529,
+    "grid": 0.8512,
+    "hho": 0.8524,
+    "mode": 0.8535,
+    "nsga2": 0.853,
+    "random": 0.8526
+  },
+  "best_dev_mean": {
+    "ga": 0.8433,
+    "ga_scalar": 0.8424,
+    "grid": 0.842,
+    "hho": 0.8442,
+    "mode": 0.845,
+    "nsga2": 0.8437,
+    "random": 0.8442
+  },
+  "knee_dev_mean": {
+    "ga": 0.8439,
+    "ga_scalar": 0.8342,
+    "grid": 0.8359,
+    "hho": 0.8414,
+    "mode": 0.841,
+    "nsga2": 0.8384,
+    "random": 0.8375
+  },
+  "knee_nfeat_mean": {
+    "ga": 34101.3,
+    "ga_scalar": 14852.0,
+    "grid": 28341.4,
+    "hho": 50326.9,
+    "mode": 19974.6,
+    "nsga2": 22413.9,
+    "random": 27958.3
+  }
+}
