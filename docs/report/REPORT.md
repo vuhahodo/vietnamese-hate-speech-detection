@@ -22,7 +22,7 @@ Pipeline kế thừa: Al-Zoubi, Mora, Faris (IEEE Access 2023), HHO đơn mục 
 
 - Split gốc 14.306 / 1.590 / 3.974; sau khi bỏ trùng nguyên văn: **14.181 / 1.587 / 3.971** (`results/data_audit.json`). Cùng split và băm SHA-256 với dự án VeriReview.
 - Fitness của mọi thuật toán: macro F1 trung bình CV 5 fold phân tầng **chỉ trên train**; chi² chọn đặc trưng được tính riêng trong từng fold.
-- Dev dùng để chọn cấu hình sau tìm kiếm. Test chấm cho 3 cấu hình cố định trước khi xem test (`scripts/final_eval.py`). Test đã được đọc 6 lần trong toàn dự án, đều với cấu hình cố định (tái lập baseline 2 lần, độ nhạy gần trùng 2 lần, đánh giá cuối 1 lần, ViSoBERT 1 lần).
+- Dev dùng để chọn cấu hình sau tìm kiếm. Test chấm cho 3 cấu hình cố định trước khi xem test (`scripts/final_eval.py`). Test đã được đọc 7 lần trong toàn dự án, đều với cấu hình cố định (tái lập baseline 2 lần, độ nhạy gần trùng 2 lần, đánh giá cuối 1 lần, ViSoBERT 1 lần, ensemble 1 lần).
 - Giới hạn: TF-IDF fit trên toàn train (không có nhãn nên không rò nhãn, nhưng IDF thấy cả fold kiểm tra).
 
 ## 3. Phương pháp
@@ -64,6 +64,7 @@ Nguồn: `results/final_test_t1.json`, `results/final_test_t1_phobert.json`, `re
 
 | Mô hình | Số đặc trưng | Macro F1 [CI 95%] | Độ trễ 1 review (trung vị) | Kích thước |
 |---|---:|---:|---:|---:|
+| Ensemble PhoBERT 0,7 + ViSoBERT 0,3, ngưỡng 0,34 (chọn trên dev) | không áp dụng | **0,9010** [0,891; 0,911] | tổng hai mô hình | lớn |
 | PhoBERT-base-v2 (AI4Life) | không áp dụng | **0,8945** [0,884; 0,905] | ~62 ms (theo lô, CPU) | lớn |
 | ViSoBERT (Kaggle GPU, 3 epoch, văn bản thô) | không áp dụng | 0,8835 [0,872; 0,894] | ~71 ms (theo lô, CPU) | lớn |
 | EA | 24.060 | 0,8630 [0,851; 0,874] | 2,7 ms | 8,7 MB |
@@ -74,6 +75,7 @@ Kiểm định theo cặp trên cùng mẫu (chênh macro F1, bootstrap 95%, McN
 - EA - BASE = +2,75 điểm [1,7; 3,8], McNemar p < 0,001.
 - FULL - BASE = +2,64 điểm [1,6; 3,6], p < 0,001.
 - EA - FULL = +0,11 điểm [-0,75; 0,89], p = 1,0 (không phân biệt được).
+- Ensemble - PhoBERT = +0,65 điểm [0,14; 1,13] (bootstrap), McNemar p = 0,11 (không có ý nghĩa theo McNemar); Ensemble - ViSoBERT = +1,76 điểm [0,85; 2,65], p < 0,001. Trọng số 0,7 và ngưỡng 0,34 chọn trên dev (dev 0,882 so với 0,873 của PhoBERT ở ngưỡng 0,5); một phần mức tăng đến từ việc hạ ngưỡng.
 - ViSoBERT - EA = +2,05 điểm [0,9; 3,1], p < 0,001; PhoBERT - ViSoBERT = +1,11 điểm [0,09; 2,14], McNemar p = 0,032 (khác biệt biên giới).
 - PhoBERT - EA = +3,15 điểm [2,0; 4,3], p < 0,001; PhoBERT - BASE = +5,9 điểm [4,6; 7,2], p < 0,001.
 
