@@ -102,7 +102,7 @@ data/                   KHÔNG commit (giấy phép CC-BY-NC, truy cập có ki�
   
   ĐKHT: cùng ngân sách (ví dụ 2.000 lần đánh giá); 10 seed; log hội tụ.
 - [~] **P2.4 So sánh** (T1 xong: `results/search_summary_t1.csv`, `results/search_stats_t1.json`; chưa có hình Pareto/hội tụ, chưa chạy T2): hypervolume (cùng điểm tham chiếu), macro F1 trên dev của điểm knee, Wilcoxon và Friedman giữa các thuật toán. ĐKHT: `results/search_summary.csv`, hình Pareto front, hình hội tụ; báo cả khi NSGA-II không hơn random search.
-- [ ] **P2.5 Đánh giá cuối:** chọn 1-3 cấu hình từ Pareto front theo dev, chấm test 1 lần, bootstrap CI, McNemar với baseline P1 và PhoBERT. ĐKHT: `results/final_test.json`.
+- [~] **P2.5 Đánh giá cuối** (T1 xong: `results/final_test_t1.json`, `scripts/final_eval.py`; test lần thứ 5, ba cấu hình cố định theo dev; còn thiếu McNemar với PhoBERT và đo độ trễ đầu-cuối; T2 bỏ): chọn 1-3 cấu hình từ Pareto front theo dev, chấm test 1 lần, bootstrap CI, McNemar với baseline P1 và PhoBERT. ĐKHT: `results/final_test.json`.
 
 ### P3. Phân tích (RQ4)
 - [ ] **P3.1** Tần suất chọn từng khối đặc trưng trên các Pareto front; khối nào quan trọng cho từng loại spam ở T2.

@@ -49,7 +49,8 @@ class SearchContext:
     """Holds precomputed, rank-ordered CSC matrices so one evaluation is only slicing + fitting."""
 
     def __init__(self, task: str = "t1", n_folds: int = 5, fold_seed: int = 0,
-                 verbose: bool = False) -> None:
+                 verbose: bool = False, load_test: bool = False) -> None:
+        # load_test=True only for the one-shot final evaluation (scripts/final_eval.py)
         t0 = time.time()
         self.task = task
         splits, _ = load_splits()
@@ -58,15 +59,19 @@ class SearchContext:
         self.y = train[col].to_numpy()
         self.y_dev = dev[col].to_numpy()
         texts, dev_texts = train["text"].tolist(), dev["text"].tolist()
+        test_texts = splits["test"]["text"].tolist() if load_test else None
+        self.y_test = splits["test"][col].to_numpy() if load_test else None
 
-        full, dev_m = {}, {}
+        full, dev_m, test_m = {}, {}, {}
         for name in BLOCKS:
             block = get_feature_block(name)
             xt = block.fit_transform(texts).tocsr()
             xd = block.transform(dev_texts).tocsr()
+            xs = block.transform(test_texts).tocsr() if load_test else None
             if name == "b4":
                 xt, xd = _scale_b4(xt), _scale_b4(xd)
-            full[name], dev_m[name] = xt, xd
+                xs = _scale_b4(xs) if load_test else None
+            full[name], dev_m[name], test_m[name] = xt, xd, xs
         self.block_dims = {b: full[b].shape[1] for b in BLOCKS}
 
         self.folds = list(StratifiedKFold(n_folds, shuffle=True, random_state=fold_seed)
@@ -81,11 +86,13 @@ class SearchContext:
                 xb[name] = full[name][b][:, order].tocsc()
             self._fold.append((xa, xb))
         # full-train ranking for the final dev scoring
-        self._full_tr, self._full_dev = {}, {}
+        self._full_tr, self._full_dev, self._full_test = {}, {}, {}
         for name in BLOCKS:
             order = _chi2_order(full[name], self.y)
             self._full_tr[name] = full[name][:, order].tocsc()
             self._full_dev[name] = dev_m[name][:, order].tocsc()
+            if load_test:
+                self._full_test[name] = test_m[name][:, order].tocsc()
         if verbose:
             print(f"SearchContext({task}) ready in {time.time() - t0:.1f}s; dims={self.block_dims}")
 
@@ -128,6 +135,17 @@ class SearchContext:
             model.fit(self._assemble(cfg, self._full_tr), self.y)
             pred = model.predict(self._assemble(cfg, self._full_dev))
         return float(f1_score(self.y_dev, pred, average="macro"))
+
+    def predict(self, cfg: Config, split: str = "dev") -> np.ndarray:
+        """Fit on the full training split and predict ``split`` ("dev" or "test")."""
+        mats = {"dev": self._full_dev, "test": self._full_test}[split]
+        if not mats:
+            raise RuntimeError("test split not loaded; create the context with load_test=True")
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            model = self._make_model(cfg)
+            model.fit(self._assemble(cfg, self._full_tr), self.y)
+            return model.predict(self._assemble(cfg, mats))
 
     def n_features(self, cfg: Config) -> int:
         return n_features(cfg, self.block_dims)
