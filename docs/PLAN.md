@@ -110,9 +110,9 @@ data/                   KHÔNG commit (giấy phép CC-BY-NC, truy cập có ki�
 - [ ] **P3.3** Hạn chế: không có metadata shop/thời gian, nhãn nguồn khác nhãn Y0/Y1 của VeriReview, κ = 0,72 của bộ dữ liệu.
 
 ### P4. Báo cáo môn
-- [ ] **P4.1** Báo cáo: đặt vấn đề, liên quan, phương pháp (phát biểu bài toán đa mục tiêu, mã hóa, toán tử), thí nghiệm, kết quả, thảo luận, hạn chế. ĐKHT: mọi số trong báo cáo truy được về `results/`.
+- [~] **P4.1** Báo cáo (bản T1 xong: `docs/report/REPORT.md`; còn T2/RQ4 và P3): đặt vấn đề, liên quan, phương pháp (phát biểu bài toán đa mục tiêu, mã hóa, toán tử), thí nghiệm, kết quả, thảo luận, hạn chế. ĐKHT: mọi số trong báo cáo truy được về `results/`.
 - [ ] **P4.2** Slide và demo nhỏ (script dự đoán 1 câu kèm giải thích).
-- [ ] **P4.3** Lệnh chạy lại toàn bộ từ đầu ghi trong README; chạy thử trên máy sạch.
+- [~] **P4.3** Lệnh chạy lại (đã ghi trong `docs/report/REPORT.md` mục 8; chưa chạy thử trên máy sạch): toàn bộ từ đầu ghi trong README; chạy thử trên máy sạch.
 
 ### P5. Chuyển sang VeriReview (sau khi P1-P3 xong)
 - [ ] **P5.1** Trong AI4Life, tạo nhánh `task/A1-vispam-ea`; chép `vispam/` vào `research/vispam_ea/`, cùng `results/` và tóm tắt báo cáo. Không chép dữ liệu.

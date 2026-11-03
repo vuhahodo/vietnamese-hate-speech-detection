@@ -1,0 +1,32 @@
+{
+  "BASE": {
+    "n_features": 113258,
+    "dev_macro_f1": 0.8230723847258836,
+    "agreement_with_search_code_dev": 1.0,
+    "fit_seconds": 13.672241449356079,
+    "latency_ms_batch300": 0.2859397777774575,
+    "latency_ms_single_median": 2.9277999997248116,
+    "latency_ms_single_p95": 3.6072899997179775,
+    "artifact_mb": 7.834844
+  },
+  "FULL": {
+    "n_features": 149456,
+    "dev_macro_f1": 0.8455027221055942,
+    "agreement_with_search_code_dev": 1.0,
+    "fit_seconds": 33.587566614151,
+    "latency_ms_batch300": 0.7906045555541318,
+    "latency_ms_single_median": 5.18675000012081,
+    "latency_ms_single_p95": 6.758994999700008,
+    "artifact_mb": 10.721324
+  },
+  "EA": {
+    "n_features": 24060,
+    "dev_macro_f1": 0.8485921323925963,
+    "agreement_with_search_code_dev": 1.0,
+    "fit_seconds": 33.98033857345581,
+    "latency_ms_batch300": 0.7621235555557683,
+    "latency_ms_single_median": 2.715799999805313,
+    "latency_ms_single_p95": 4.10070499970061,
+    "artifact_mb": 8.715004
+  }
+}
