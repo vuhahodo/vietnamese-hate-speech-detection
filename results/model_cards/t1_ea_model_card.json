@@ -1,0 +1,70 @@
+{
+  "model_version": "vispam-t1-classical-ea-v1",
+  "description": "Block-selected classical model: knee of multi-objective DE search (24,060 features)",
+  "task": "ViSpamReviews T1: spam (1) vs non-spam (0) from review text only",
+  "input_spec": {
+    "type": "string",
+    "description": "review text, Vietnamese; callers must apply the same NFC normalisation as vispam.data before scoring"
+  },
+  "output_spec": {
+    "score": "signed margin, larger = more likely spam; score >= 0 predicts spam",
+    "label": "0 non-spam, 1 spam"
+  },
+  "train_data": {
+    "name": "ViSpamReviews (CC-BY-NC-4.0), mirror visolex/ViSpamReviews",
+    "split": "published split after exact casefolded de-duplication: 14,181 train / 1,587 dev / 3,971 test",
+    "fit": "train only; test scored once"
+  },
+  "limitations": [
+    "Source-task model score, not a fake-review probability and not a Y0/Y1/YU label.",
+    "Trained on ViSpamReviews (older Vietnamese e-commerce reviews); not validated on self-collected Shopee reviews.",
+    "No Golden Test Set metrics yet; no shop, time or reviewer metadata is used.",
+    "71/3,971 test rows have cosine >= 0.90 with a train row; baseline macro F1 drops 0.0065 without them.",
+    "Weaker than PhoBERT-base-v2 (macro F1 0.8945, paired difference significant, McNemar p < 0.001)."
+  ],
+  "golden_test_set_metrics": null,
+  "metrics": {
+    "test_macro_f1": 0.8630031611868927,
+    "test_macro_f1_ci95": [
+      0.85062728847942,
+      0.8743853336284799
+    ],
+    "test_f1_per_class_nonspam_spam": [
+      0.9226180031584489,
+      0.8033883192153366
+    ],
+    "n_test": 3971,
+    "dev_macro_f1": 0.8485921323925963
+  },
+  "config": {
+    "blocks_keep_fraction": {
+      "b1_word_tfidf_pyvi": 0.35,
+      "b2_char_tfidf_2_5": 0.1,
+      "b3_surface_stats": 0.8,
+      "b4_ad_dictionary": 0.95
+    },
+    "block_weights": {
+      "b1_word_tfidf_pyvi": 1.4142135623730951,
+      "b2_char_tfidf_2_5": 2.8284271247461903,
+      "b3_surface_stats": 1.0,
+      "b4_ad_dictionary": 2.8284271247461903
+    },
+    "classifier": "svc",
+    "C": 0.1778279410038923,
+    "n_features": 24060
+  },
+  "thresholds": {
+    "decision_margin": 0.0
+  },
+  "latency_cpu_ms": {
+    "single_review_median": 2.715799999805313,
+    "single_review_p95": 4.10070499970061,
+    "batch_of_300_mean": 0.7621235555557683,
+    "note": "raw text to prediction, one process, includes pyvi tokenisation"
+  },
+  "file": "artifacts/t1_ea.joblib (rebuilt by scripts/measure_latency.py; not committed)",
+  "artifact_mb": 8.715004,
+  "comparison": {
+    "phobert_test_macro_f1": 0.8945438460435593
+  }
+}
